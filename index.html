@@ -7,92 +7,115 @@
     <title>CEEMTI BAIXO GUANDU</title>
     <style>
         body {
-            font-family: 'Arial', sans-serif;
-            background-color:# #F0FFFF ;
+            font-family: 'Verdana', sans-serif;
+            background-color: #F0FFFF;
             margin: 0;
             padding: 0;
             color: #333;
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
         }
 
         header {
-            background-color: #444;
-            color: purple;
+            background-color: #f8f8f8;
+            color: #16537e;
             text-align: center;
             padding: 2em 0;
         }
 
         header h1 {
             margin: 0;
-            font-size: 3em;
-            background position: 2px;
-            text-align: left;
+            font-size: 2.2em;
+            text-align: start;
+            
+            
+        }
+
+        div{
+            height: 50px;
+            width: 50px;
+            display: flex;
+            align-items: left;
+            justify-content: left;
+        }
+
+        header img{
+            height: 100%;
+            width: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            
         }
 
         header p {
             font-size: 1.2em;
+            
         }
 
         nav {
-            background-color: #555;
+            background-color: #45818e;
             overflow: hidden;
             text-align: center;
+            border: 1.5px solid black;
+            border-radius: 5px;
         }
 
         nav a {
-            color: white;
+            color: #ffffff;
+            font-family: 'Verdana', sans-serif;
+            text-shadow: 2px 2px 5px rgb(34, 34, 34);
             padding: 14px 20px;
             display: inline-block;
             text-decoration: none;
             text-align: center;
-            img=src: ;
         }
 
         nav a:hover {
-            background-color: #333;
+            background-color: #eeeeee;
+            color: #16537e;
+            border-radius: 5px;
+            transition-duration: 0.5s;
+            
         }
 
-        .container {
-            width: 80%;
-            margin: 2em auto;
-            padding: 1em;
+        main h1 {
+            font-family: 'Verdana', sans-serif;
+            flex: 1;
+            padding: 20px;
+            text-align: center;
+            color: #000000;
+            font-size: 30px;
         }
 
-        .post {
-            background-color: white;
-            padding: 2em;
-            margin-bottom: 1.5em;
-            border-radius: 8px;
-            box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
-        }
+        main h2 {
+            font-family: 'Verdana', sans-serif;
+            color: #000000;
+            flex: 1;
+            padding: 20px;
+            text-align: left;
 
-        .post h2 {
-            color: #333;
-            font-size: 2em;
-            margin-bottom: 1em;
-        }
 
-        .post p {
-            line-height: 1.7;
-            font-size: 1.1em;
-            color: #555;
         }
 
         footer {
-            background-color: #444;
-            color: white;
+            background-color: #45818e;
+            color: #ffffff;
             text-align: center;
             padding: 1em;
-            position: fixed;
-            width: 100%;
-            bottom: 0;
+            position: relative;
+            margin-top: auto;
+            border: 1.5px solid black;
+            border-radius: 2px;
         }
 
         @media screen and (max-width: 768px) {
-            .container {
-                width: 90%;
-            }
             header h1 {
-                font-size: 2.5em;
+                font-size: 1.8em;
+            }
+            img {
+                width: 50%;
             }
         }
     </style>
@@ -102,22 +125,30 @@
     <!-- Seção de Cabeçalho -->
     <header>
         <h1>CEEMTI BAIXO GUANDU</h1>
+        <div><img src="logo123.jpeg" alt="Logo da escola"></div>
+        <img src="inicio.png" alt="inicio">
     </header>
 
     <!-- Barra de Navegação -->
     <nav>
         <a href="index.html">Início</a>
         <a href="escola.html">Escola</a>
-        <a href="cardápio.html">Cardápio</a>
+        <a href="cardapio.html">Cardápio</a>
         <a href="feriados.html">Feriados e Eventos</a>
         <a href="jogo.html">Jogo</a>
-        <a href="ceemti news.html">Ceemti News</a>
+        <a href="ceemti-news.html">Ceemti News</a>
         <a href="sobre.html">Sobre</a>
     </nav>
 
+    <!-- Conteúdo Principal -->
+    <main>
+        <h1>Bem-vindo ao site do CEEMTI Baixo Guandu!</h1>
+        <h2>início: </h2>
+    </main>
+
     <!-- Seção de Rodapé -->
     <footer>
-            <p>&copy; 2025 Ceemti Baixo Guandu.</p>
+        <p>&copy; 2025 Ceemti Baixo Guandu.</p>
     </footer>
 
 </body>
